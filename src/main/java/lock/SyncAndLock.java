@@ -21,8 +21,8 @@ public class SyncAndLock {
             public void run() {
                 try {
 //                    syncAndLock.testSync();
-//                    syncAndLock.testTryLock();
-                    syncAndLock.testLock();
+                    syncAndLock.testTryLock();
+//                    syncAndLock.testLock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -34,8 +34,8 @@ public class SyncAndLock {
             public void run() {
                 try {
 //                    syncAndLock.testSync();
-//                    syncAndLock.testTryLock();
-                    syncAndLock.testLock();
+                    syncAndLock.testTryLock();
+//                    syncAndLock.testLock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
