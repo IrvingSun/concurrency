@@ -21,8 +21,8 @@ public class SyncAndLock {
             public void run() {
                 try {
 //                    syncAndLock.testSync();
-                    syncAndLock.testTryLock();
-//                    syncAndLock.testLock();
+//                    syncAndLock.testTryLock();
+                    syncAndLock.testLock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -34,8 +34,8 @@ public class SyncAndLock {
             public void run() {
                 try {
 //                    syncAndLock.testSync();
-                    syncAndLock.testTryLock();
-//                    syncAndLock.testLock();
+//                    syncAndLock.testTryLock();
+                    syncAndLock.testLock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -73,7 +73,7 @@ public class SyncAndLock {
         lock.lock();
            try{
                System.out.println("进入testLock方法  "+Thread.currentThread().getName());
-               TimeUnit.SECONDS.sleep(2);
+               TimeUnit.HOURS.sleep(2);
                System.out.println("退出testLock方法  "+Thread.currentThread().getName());
            }finally {
                lock.unlock();

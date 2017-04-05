@@ -27,6 +27,11 @@ public class Mutex implements Lock{
         }
 
         @Override
+        protected int tryAcquireShared(int arg) {
+            return super.tryAcquireShared(arg);
+        }
+
+        @Override
         protected boolean tryRelease(int release) {
             System.out.println("开始释放锁...");
             if(getState() == 0){
